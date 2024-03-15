@@ -9,7 +9,8 @@
         .sản-phẩm img {
             border-radius: 20px;
             box-shadow: 5px 5px 10px;
-            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
         }
 
         .tên-sản-phẩm {
@@ -30,14 +31,15 @@
             text-align: center;
             cursor: pointer;
             float: left;
+            display: grid;
         }
 
         .giá-sản-phẩm::before {
-            content: "-";
+            content: "- ";
         }
 
         .sản-phẩm:hover .thông-tin {
-            display: block;
+            display: inline;
         }
     </style>
 </head>
@@ -99,7 +101,7 @@
                 <span class="tên-sản-phẩm">Bún chả</span>
                 <span class="giá-sản-phẩm">30.000đ</span>
             </div>
-        </div>
+        </div> 
     </div>
 </body>
 
