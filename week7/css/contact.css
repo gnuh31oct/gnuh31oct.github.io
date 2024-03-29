@@ -55,8 +55,17 @@ body {
 .information {
     transform: rotateX(180deg);
     font-size: 24px;
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     margin-top: -70px;
+}
+
+.information>p>a {
+    color: black;
+    text-decoration: underline;
+}
+
+.information>p>a:active {
+    color: white;
 }
 
 .member>.avatar>img {
@@ -65,10 +74,11 @@ body {
     border-radius: 50%;
     overflow: hidden;
     object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .member>.avatar>p {
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     margin-top: 10px;
     font-size: 24px;
 }
@@ -81,4 +91,45 @@ h1 {
     text-align: center;
     color: white;
     text-shadow: 0 0 10px #fff;
+}
+
+.homebar,
+.header {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a:link,
+a:visited,
+a {
+    text-decoration: none;
+}
+
+.header>a {
+    height: 60px;
+    width: 20%;
+    margin: auto;
+    font-size: 36px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    padding-top: 1.6vh;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    text-shadow: 0 0 10px #000;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+.header>a:nth-child(1) {
+    border-left: none;
+}
+
+.header>a:hover {
+    background-color: #000;
+    text-shadow: 0 0 10px #fff;
+    color: white;
 }
