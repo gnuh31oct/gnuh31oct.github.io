@@ -133,6 +133,7 @@ span {
     animation: animateright ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    transition: all 0.5s ease;
 }
 
 span:nth-child(1) {
@@ -159,4 +160,8 @@ span:nth-child(4) {
     100% {
         opacity: 1
     }
+}
+
+span:hover {
+    scale: 1.15;
 }
