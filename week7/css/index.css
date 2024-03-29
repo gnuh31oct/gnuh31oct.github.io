@@ -128,3 +128,35 @@ a:active,
 a {
     color: white;
 }
+
+span {
+    animation: animateright ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+span:nth-child(1) {
+    animation: animateright ease-in-out 2s;
+}
+
+span:nth-child(2) {
+    animation: animateright ease-in-out 2.75s;
+}
+
+span:nth-child(3) {
+    animation: animateright ease-in-out 3.5s;
+}
+
+span:nth-child(4) {
+    animation: animateright ease-in-out 4.25s;
+}
+
+@keyframes animateright {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
