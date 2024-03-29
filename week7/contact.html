@@ -5,140 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .title {
-            font-style: italic;
-        }
-
-        .avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .information {
-            display: none;
-        }
-
-        .member {
-            background-color: rgb(94, 227, 79);
-            border-radius: 50px;
-            text-align: center;
-            height: auto;
-            width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            transition: background-color 1s, color 0.15s;
-            cursor: pointer;
-        }
-
-        .member img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-left: auto;
-            margin-right: auto;
-            transition: background-color 1s, color 0.15s;
-        }
-
-        .member hover {
-            background-color: rgb(255, 0, 0);
-            color: white;
-        }
-
-        .member active {
-            opacity: 0.6;
-        }
-
-        .member:hover .information {
-            display: inline;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
-<body style="background-color: aqua;"
-    background="img/pngtree-minimalistic-small-icon-ad-background-picture-image_960138.jpg">
-    <div class="title">
-        <h1 style="text-align: center;">CONTACT INFORMATION</h1>
+<body>
+    <h1>CONTACT INFORMATION</h1>
+    <div class='main'>
+        <div class="r1">
+            <div class="member">
+                <div class='avatar'>
+                    <img src="img/ava.jpg" alt="Avatar"><br>
+                    <p>Pham Ho Bao</p>
+                </div>
+                <div class="information">
+                    <p>Phone: 092 8152 468<br>Student code: 23070455<br>Email: 23070455@vnu.edu.vn<br>Address: Xuan
+                        Mai-Ha Noi</p>
+                </div>
+            </div>
+            <div class="member" style='margin: auto 100px'>
+                <div class='avatar'>
+                    <img src="img/ava.jpg" alt="Avatar"><br>
+                    <p>Nguyen Tuan Minh</p>
+                </div>
+                <div class="information">
+                    <p>Phone: 086 2824 786<br>Student code: 23070471<br>Email: 23070471@vnu.edu.vn<br>Address: Gia
+                        Lam-Ha Noi</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class='avatar'>
+                    <img src="img/ava.jpg" alt="Avatar"><br>
+                    <p>Nguyen Xuan Hung</p>
+                </div>
+                <div class="information">
+                    <p>Phone: 037 7749 011<br>Student code: 23070351<br>Email: 23070351@vnu.edu.vn<br>Address: Hoai
+                        Duc-Ha Noi</p>
+                </div>
+            </div>
+        </div>
+        <div class='r2'>
+            <div class="member">
+                <div class='avatar'>
+                    <img src="img/ava.jpg" alt="Avatar"><br>
+                    <p>Dang The Ngoc</p>
+                </div>
+                <div class="information">
+                    <p>Phone: 096 6459 398<br>Student code: 23070421<br>Email: 23070421@vnu.edu.vn<br>Address: Yen
+                        Lac-Vinh Phuc</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class='avatar'>
+                    <img src="img/ava.jpg" alt="Avatar"><br>
+                    <p>Nguyen Thanh Tung</p>
+                </div>
+                <div class="information">
+                    <p>Phone: 086 7828 143<br>Student code: 23070341<br>Email: 23070341@vnu.edu.vn<br>Address: Phuc
+                        Yen-Vinh Phuc</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <div class="member">
-            <b>
-                <h2>Member 1</h2>
-                <p>Name: Pham Ho Bao</p>
-                <p>Phone: 092 8152 468</p>
-            </b>
-            <img src="img/ava.jpg" alt=""><br>
-            <div class="information">
-                <span class="code">Student code: 23070455</span><br>
-                <span class="Email">Email: 23070455@vnu.edu.vn</span><br>
-                <span class="Address">Address: Xuan Mai-Ha Noi</span>
-            </div>
-
-        </div>
-        <div class="member">
-            <b>
-                <h2>Member 2</h2>
-                <p>Name: Nguyen Tuan Minh</p>
-                <p>Phone: 086 2824 786</p>
-            </b>
-            <img src="img/ava.jpg" alt=""><br>
-            <div class="information">
-                <span class="code">Student code: 23070471</span><br>
-                <span class="Email">Email: 23070471@vnu.edu.vn</span><br>
-                <span class="Address">Address: Gia Lam-Ha Noi</span>
-            </div>
-
-        </div>
-        <div class="member">
-            <b>
-                <h2>Member 3</h2>
-                <p>Name: Nguyen Xuan Hung</p>
-                <p>Phone: 037 7749 011</p>
-            </b>
-            <img src="img/ava.jpg" alt=""><br>
-            <div class="information">
-                <span class="code">Student code: 23070351</span><br>
-                <span class="Email">Email: 23070351@vnu.edu.vn</span><br>
-                <span class="Address">Address: Hoai Duc-Ha Noi</span>
-            </div>
-
-        </div>
-
-        <div class="member">
-            <b>
-                <h2>Member 4</h2>
-                <p>Name: Dang The Ngoc</p>
-                <p>Phone: 096 6459 398</p>
-            </b>
-            <img src="img/ava.jpg" alt=""><br>
-            <div class="information">
-                <span class="code">Student code: 23070421</span><br>
-                <span class="Email">Email: 23070421@vnu.edu.vn</span><br>
-                <span class="Address">Address: Yen Lac-Vinh Phuc</span>
-            </div>
-
-        </div>
-
-        <div class="member">
-            <b>
-                <h2>Member 5</h2>
-                <p>Name: Nguyen Thanh Tung</p>
-                <p>Phone: 086 7828 143</p>
-            </b>
-            <img src="img/ava.jpg" alt=""><br>
-            <div class="information">
-                <span class="code">Student code: 23070341</span><br>
-                <span class="Email">Email: 23070341@vnu.edu.vn</span><br>
-                <span class="Address">Address: Phuc Yen-Vinh Phuc</span>
-            </div>
-
-        </div>
     </div>
 
 </body>
