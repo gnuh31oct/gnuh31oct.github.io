@@ -15,16 +15,78 @@ body {
             rgba(0, 172, 193, 1) 100%);
 }
 
-section {
-    position: relative;
+.top {
     width: 100%
 }
 
-section>.waves {
+.top>.waves>.wave {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 125px;
+    background: url('../img/wavereversed.png');
+    background-size: 1000px 125px;
+}
+
+.top>.waves>.wave#wave1 {
+    opacity: 0.8;
+    top: 0;
+    z-index: 1000;
+    animation: animate3 4s linear infinite;
+}
+
+.top>.waves>.wave#wave2 {
+    opacity: 0.5;
+    top: -10px;
+    z-index: 999;
+    animation: animate4 4s linear infinite;
+}
+
+.top>.waves>.wave#wave3 {
+    opacity: 0.2;
+    top: -15px;
+    z-index: 998;
+    animation: animate3 8s linear infinite;
+}
+
+.top>.waves>.wave#wave4 {
+    opacity: 0.7;
+    top: -20px;
+    z-index: 999;
+    animation: animate4 8s linear infinite;
+}
+
+@keyframes animate4 {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.bottom {
+    position: relative;
+    width: 100%;
+}
+
+.bottom>.waves {
     position: relative
 }
 
-section>.waves>.wave {
+.bottom>.waves>.wave {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -34,32 +96,32 @@ section>.waves>.wave {
     background-size: 1000px 125px;
 }
 
-section>.waves>.wave#wave1 {
-    opacity: 1;
+.bottom>.waves>.wave#wave1 {
+    opacity: 0.8;
     bottom: 0;
     z-index: 1000;
+    animation: animate 8s linear infinite;
+}
+
+.bottom>.waves>.wave#wave2 {
+    opacity: 0.5;
+    bottom: -10px;
+    z-index: 999;
+    animation: animate2 8s linear infinite;
+}
+
+.bottom>.waves>.wave#wave3 {
+    opacity: 0.2;
+    bottom: -15px;
+    z-index: 998;
     animation: animate 4s linear infinite;
 }
 
-section>.waves>.wave#wave2 {
-    opacity: 0.5;
-    bottom: 10px;
+.bottom>.waves>.wave#wave4 {
+    opacity: 0.7;
+    bottom: -20px;
     z-index: 999;
     animation: animate2 4s linear infinite;
-}
-
-section>.waves>.wave#wave3 {
-    opacity: 0.2;
-    bottom: 15px;
-    z-index: 998;
-    animation: animate 2s linear infinite;
-}
-
-section>.waves>.wave#wave4 {
-    opacity: 0.7;
-    bottom: 20px;
-    z-index: 999;
-    animation: animate2 2s linear infinite;
 }
 
 @keyframes animate {
@@ -80,4 +142,17 @@ section>.waves>.wave#wave4 {
     100% {
         background-position-x: 1000px;
     }
+}
+
+.main {
+    display: grid;
+}
+
+.main>div {
+    margin: 3rem 80rem 18rem auto;
+    display: block;
+}
+
+span {
+    color: white;
 }
