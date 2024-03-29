@@ -120,3 +120,11 @@ p {
 i {
     cursor: pointer;
 }
+
+a:hover,
+a:visited,
+a:link,
+a:active,
+a {
+    color: white;
+}
